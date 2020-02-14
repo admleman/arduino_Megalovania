@@ -1,20 +1,20 @@
 #include "pitches.h"
 int melody[] = {
   //First Bar
-  NOTE_D3, NOTE_C3, NOTE_E3, NOTE_G3,NOTE_E3,NOTE_C3,NOTE_D3
+  NOTE_R,NOTE_D3, NOTE_C3, NOTE_E3, NOTE_G3,NOTE_E3,NOTE_C3,NOTE_D3
  
 };
 
 // note durations: 4 = quarter note, 8 = eighth note, etc.:
 int noteDurations[] = {
   //First Bar
- 8,8,8,8,4,8,1
+ 16,8,8,8,8,4,8,1
 };
 
 void setup() {
 
   // iterate over the notes of the melody:
-  for (int thisNote = 0; thisNote < 7; thisNote++) {
+  for (int thisNote = 0; thisNote < 8; thisNote++) {
 
     // to calculate the note duration, take one second divided by the note type.
     //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.
